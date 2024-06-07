@@ -1,3 +1,1 @@
-# aind-capsule-template
-
-Basic structure of a capsule to be customized as needed.
+# SWDB 2024 Physiology
