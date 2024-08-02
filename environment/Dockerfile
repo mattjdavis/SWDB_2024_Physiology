@@ -1,8 +1,16 @@
-# hash:sha256:3c09b543c48e44c5101c6214c0ea6b12b9be7764a1be670f4e8152f31acd1e1d
-FROM registry.codeocean.allenneuraldynamics.org/codeocean/jupyterlab:3.0.9-miniconda4.9.2-python3.8-ubuntu20.04
+# hash:sha256:56056b488bd41b19cb85e4c444a9e6127591f92db50ca2b5833392db4caa7592
+ARG REGISTRY_HOST
+FROM $REGISTRY_HOST/codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 ARG GIT_ASKPASS
 ARG GIT_ACCESS_TOKEN
 COPY git-askpass /
+
+RUN pip install -U --no-cache-dir \
+    allensdk==2.16.2 \
+    brain-observatory-utilities==0.3.1 \
+    pandas==1.5.3 \
+    scikit-learn==1.5.1 \
+    seaborn==0.13.2
