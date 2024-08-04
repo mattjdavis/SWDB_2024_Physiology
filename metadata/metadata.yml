@@ -1,5 +1,11 @@
 metadata_version: 1
-name: Yoni_day2_workshop1_testingcapsual
-description: Basic structure of a capsule to be customized as needed.
+name: SWDB Neural Coding
+description: 'SWDB Day 2: Neural Coding'
+tags:
+- swdb2024
 authors:
-- name: AIND
+- name: Yoni Browning
+- name: Matt Davis
+- name: Johannes Friedrich
+- name: Marina Garrett
+- name: Gabriel Ocker
