@@ -1,4 +1,4 @@
-# hash:sha256:4fdf4f85f6b37d7150727a9fcf65e58c848d4d8e7d37b9354f83e36a66dc17a0
+# hash:sha256:662ba5ce57bd45ca1aab6c7285d1898c2e192a387bc9261238cf61157ea4d951
 ARG REGISTRY_HOST
 FROM $REGISTRY_HOST/codeocean/mambaforge3:23.1.0-4-python3.10.12-ubuntu22.04
 
@@ -10,7 +10,7 @@ COPY git-askpass /
 
 RUN pip install -U --no-cache-dir \
     allensdk==2.16.2 \
-    brain-observatory-utilities==0.3.1 \
+    brain-observatory-utilities==0.4.0 \
     pandas==1.5.3 \
     scikit-learn==1.5.1 \
     seaborn==0.13.2
